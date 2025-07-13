@@ -1,5 +1,5 @@
 {
-  "name": "Rocont-test",
+  "name": "landing-vite",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -12,7 +12,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "fast-glob": "^3.3.3",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.0",
     "sass": "^1.63.0",
     "ts-node": "^10.9.2",

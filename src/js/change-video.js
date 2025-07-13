@@ -4,9 +4,10 @@ window.addEventListener('load', () => {
 
   function setVideoSource() {
     const width = window.innerWidth;
+    const basePath = import.meta.env.BASE_URL;
     const newSrc = width <= 960
-      ? '/video/video-960px.mp4'
-      : '/video/video-1160px.mp4';
+      ? `${basePath}video/video-960px.mp4`
+      : `${basePath}video/video-1160px.mp4`;
 
     if (source.getAttribute('src') !== newSrc) {
       source.src = newSrc;

@@ -5,6 +5,7 @@ import createSvgSpritePlugin from 'vite-plugin-svg-spriter'
 const SVG_FOLDER_PATH = path.resolve(__dirname, 'src/assets/icons')
 
 export default defineConfig({
+  base: '/Rocont-test/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
