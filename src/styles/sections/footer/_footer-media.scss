@@ -1,0 +1,31 @@
+@use '@/styles/abstracts/variables' as var;
+@use '@/styles/abstracts/mixins' as *;
+
+@media (max-width: 800px) {
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-nav{
+        order: 2;
+        padding: 0 0 32px 0;
+    }
+    .footer-policy{
+        order: 3;
+        margin: 0;
+    }
+    .footer-logo{
+        order: 1;
+        padding: 0 0 32px 0;
+    }
+    .footer-policy{
+        border-top: 2px solid #2E2D2B;
+        padding: 32px 0 0 0;
+        width: 100%;
+    }
+}
+@media (max-width: 370px) {
+    .footer-nav-list {
+        grid-template-columns: 1fr;
+    }
+}

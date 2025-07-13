@@ -1,0 +1,40 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as var;
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    min-height: 64px;
+    padding: 32px 0;
+}
+.footer-nav{
+    flex: 1; 
+}
+.footer-nav-list{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px 30px; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-nav-item{
+    &:hover{
+        .footer-nav-link{
+            color: var.$default-color-hover;
+        }
+    }
+}
+.footer-nav-link{
+    @include text-medium();
+}
+.footer-policy{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: auto;
+    padding: 0 32px 0 0;
+}
+.footer-policy-txt{
+    @include text-medium();
+}

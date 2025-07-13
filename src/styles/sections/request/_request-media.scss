@@ -1,0 +1,62 @@
+@use '@/styles/abstracts/variables' as var;
+@use '@/styles/abstracts/mixins' as *;
+
+@media (max-width: var.$media-960px) {
+    .request{
+        margin: 0 0 64px 0;
+        gap: 70px;
+    }
+    .request-info{
+        gap: 24px;
+        padding: 48px 0 48px 48px;
+    }
+    .request-info-title{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .request-info-list-item{
+        @include text-large-mobile(white);
+    }
+    .request-form{
+        padding: 48px 48px 0 0;
+    }
+    .request-form-btn{
+        max-width: 181px;
+    }
+    .checkbox.request-form-checkbox{
+        gap: 24px;
+    }
+    .request-form-inputs-row {
+        padding: 0 0 12px 0;
+    }
+}
+@media (max-width: var.$media-640px) {
+    .request{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .request-info{
+        gap: 24px;
+        padding: 24px;
+    }
+    .request-form{
+        padding: 0 24px 24px 24px;
+    }
+    .request-form-inputs-row{
+        flex-direction: row;
+    }
+    .request-form-input{
+        width: 100%;
+    }
+}
+@media (max-width: var.$media-480px) {
+    .request-form-btn{
+        max-width: 100%;
+    }
+    .request-form-inputs-row{
+        flex-direction: column;
+    }
+    .request-form-input{
+        width: unset;
+    }
+}

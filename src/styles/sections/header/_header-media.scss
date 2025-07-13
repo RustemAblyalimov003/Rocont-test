@@ -1,0 +1,21 @@
+@use '@/styles/abstracts/variables' as var;
+
+@media (max-width: var.$media-1160px) {
+    .header{
+        width: unset;
+        margin: 0 10px;
+    }
+}
+@media (max-width: var.$media-960px) {
+    .header-nav-list{
+        gap: 0;
+    }
+}
+@media (max-width: 740px) {
+    .burger-icon {
+        display: flex;
+    }
+    .header-nav{
+        display: none;
+    }
+}

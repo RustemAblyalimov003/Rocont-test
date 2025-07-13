@@ -1,0 +1,107 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as var;
+
+.request{
+    background-color: #1F8B48;
+    width: 100%;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 96px 0;
+    gap: 137px;
+}
+.request-info{
+    padding: 64px 0 64px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+.request-info-title{
+    @include h2-heading(white);
+}
+.request-info-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.request-info-list-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include text-large(white); 
+}
+.request-info-list-item-img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.request-form{
+    display: flex;
+    flex-direction: column;
+    padding: 64px 86px 0 0 ;
+    width: 100%;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+.request-form-inputs-row{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 0 8px 0;
+}
+.request-form-input{
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    @include text-medium();
+    padding: 0 0 0 24px; 
+}
+.request-form-input:hover,
+.request-form-input:focus {
+    box-shadow: 0 0 0 3px rgba(83, 201, 116, 0.5);
+    outline: none
+}
+input::placeholder {
+  @include text-medium();
+  opacity: 0.5;
+}
+.request-form-checkbox{
+    padding: 0 0 16px 0;
+    @include text-small(white); 
+}
+.request-form-btn{
+    max-width: 192px;
+    height: 52px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    justify-content: space-between;
+    padding: 0 24px 0 16px;
+
+}
+.request-form-btn:hover{
+    .bg-rect {
+        fill: #43A25E;   
+    }
+    .request-form-btn-txt{
+        color: var.$default-color-hover;
+    }
+}
+.request-form-btn:hover,
+.request-form-btn:focus,
+.request-form-btn:active {
+  box-shadow: 0 0 0 3px rgba(83, 201, 116, 0.5);
+  outline: none
+}
+.request-form-btn-txt{
+    @include btn-txt();
+    color: var.$default-color;
+}

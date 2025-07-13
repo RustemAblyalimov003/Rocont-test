@@ -1,0 +1,117 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as var;
+
+
+.gallery{
+    display: flex;
+    margin: 0 0 96px 0;
+}
+.swiper{
+    display: flex;
+    flex-grow: 1;   
+    min-width: 0; 
+}
+.gallery-controller{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 236px;
+    flex-shrink: 0
+}
+.gallery-title{
+    @include h2-heading();
+}
+.gallery-nav-buttons{
+    display: flex;
+    gap: 16px;
+}
+.prev-btn,
+.next-btn {
+    cursor: pointer;
+}
+.swiper-slide {
+  width: 300px !important;
+  height: 450px !important;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  transform: none !important;
+  opacity: 1 !important;
+}
+.swiper-slide::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(31, 139, 72, 1) 0%, rgba(31, 139, 72, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  border-radius: 24px;
+}
+.swiper-slide.swiper-slide-active::before {
+  opacity: 1;
+}
+.slide-1{
+    background-image: url(/images/slide-bg1.png);
+}
+.slide-2{
+    background-image: url(/images/slide-bg2.png);
+}
+.slide-3{
+    background-image: url(/images/slide-bg3.png);
+}
+.slide-4{
+    background-image: url(/images/slide-bg5.png);
+}
+.slide-description{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 32px 32px 32px;
+}
+.swiper-slide.swiper-slide-active .slide-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-title{
+    @include h4-heading(white);
+}
+.slide-txt{
+    @include text-medium(white);
+}
+.next-btn:hover{
+    .bg-rect {
+        fill: #1F8B48;   
+    }
+    .line1 {
+        stroke: white;
+    }
+    .line2 {
+        stroke: white;
+    }
+}
+.prev-btn:hover{
+    .bg-rect {
+        fill: #1F8B48;   
+    }
+    .line1 {
+        stroke: white;
+    }
+    .line2 {
+        stroke: white;
+    }
+}

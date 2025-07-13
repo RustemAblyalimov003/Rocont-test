@@ -1,0 +1,9 @@
+import './style.css'
+import './styles/main.scss';
+import './js/request-form.js';
+import './js/alert-popup-hide.js';
+import './js/input-mask.js';
+import './js/swiper.js';
+import './js/map.js';
+import './js/body-lock.js';
+import './js/change-video.js';

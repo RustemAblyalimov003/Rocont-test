@@ -1,0 +1,47 @@
+@use '@/styles/abstracts/variables' as var;
+@use '@/styles/abstracts/mixins' as *;
+
+@media (max-width: var.$media-960px) {
+    .contacts-info{
+        padding: 48px;
+        gap: 24px;
+        max-width: unset;
+    }
+    .contacts-info-title{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .contacts-info-list-item{
+        @include text-large-mobile();
+    }
+    .contacts-info-list-phones-row{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .contacts-map{
+        iframe{
+            height: 100%;
+        }
+    } 
+}
+@media (max-width: var.$media-640px) {
+    .contacts{
+        flex-direction: column;
+    }
+    .contacts-info{
+        padding: 24px;
+    }
+    .contacts-map{
+        iframe{
+            height: 250px;
+        }
+    }
+    .contacts-info-list-phones-row {
+        justify-content: unset;
+    }
+}
+@media (max-width: var.$media-480px) {
+    .contacts-btn{
+        max-width: 100%;
+    }
+}

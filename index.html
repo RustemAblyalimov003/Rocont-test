@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     <meta name="description" content="Интерактивный сайт с адаптивным видео и изображениями для всех устройств.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+    <title>Rocont</title>
+  </head>
+  <body>
+    <div class="background-deco">
+      <svg class="bg-top" viewBox="0 0 1400 1564">
+        <use href="#Topographic-5"></use>
+      </svg>
+      <svg class="bg-bottom" viewBox="0 0 1400 1564">
+        <use href="#Topographic-6"></use>
+      </svg>
+    </div> 
+    <div class="container">
+      <header class="header">
+        <a class="header-logo" href="/" aria-label="На главную страницу">
+          <svg class="logo">
+            <use href="#logo"></use>
+          </svg>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">О системе</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Архитектура</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Мнения</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Попробовать</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Для своих</a>
+            </li>
+          </ul>
+        </nav>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" />
+        <label for="burger-toggle" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <label for="burger-toggle" class="overlay"></label>
+        <div class="side-menu">
+          <div class="side-menu-column">
+            <div class="side-menu-column-inner">
+              <a class="header-logo" href="/" aria-label="На главную страницу">
+                <svg class="logo">
+                  <use href="#logo"></use>
+                </svg>
+              </a>
+              <nav class="side-menu-nav">
+                <ul class="side-menu-list">
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">О системе</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Архитектура</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Мнения</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Попробовать</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Для своих</a>
+                  </li>  
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Эти</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Пункты</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Нужны</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Чтобы</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Показать</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Что</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Контент</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Может</a>
+                  </li>
+                  <li class="side-menu-item">
+                    <a class="side-menu-link" href="#">Скролится</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="side-menu-contacts-list">
+                <li class="side-menu-contacts-item">
+                  <svg class="contact-svg">
+                    <use href="#phone"></use>
+                  </svg>
+                  <a class="contacts-info-list-link" href="tel:88008888888">8 (800) 444 44 44</a>
+                </li>
+                <li class="side-menu-contacts-item">
+                  <svg class="contact-svg">
+                    <use href="#phone"></use>
+                  </svg>
+                  <a class="contacts-info-list-link" href="tel:88008888888">8 (800) 888 88 88</a>
+                </li>
+                <li class="side-menu-contacts-item">
+                  <svg class="contact-svg">
+                    <use href="#email"></use>
+                  </svg>
+                  <a class="contacts-info-list-link" href="mailto:example@mail.ru">example@mail.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="about">
+          <video id="responsiveVideo" class="about-video" preload="auto" autoplay muted loop playsinline>
+            <source id="videoSource" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+          <h1 class="about-title">Просто потому что можем</h1>
+          <div class="about-info">
+            <p class="about-info-txt">
+              Мы сделали это средство не ради прибыли, а из любви к красивым словам. 
+              Один стик в день — и вы чувствуете, что делаете что-то важное. Что именно — решать вам.
+            </p>
+            <div class="about-info-appeal">
+              <button class="about-info-btn">
+                <span class="about-info-btn-txt">Попробовать просто так</span>
+                <svg class="contacts-btn-icon" width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_93_959)">
+                    <path class="line1" d="M34 0V0C34 5.52285 38.4772 10 44 10V10" stroke="#1F8B48" stroke-width="2"/>
+                    <path class="line2" d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10" stroke="#1F8B48" stroke-width="2"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_93_959">
+                      <rect class="bg-rec" x="48" width="20" height="48" rx="10" transform="rotate(90 48 0)" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <span class="about-info-certifiсate">
+                Сертификат есть. Но это не точно. 
+                <br>
+                СГР №AM.01.01 .01.003.R.00 o47 4.06.24
+              </span>
+            </div>
+          </div>
+        </section >
+        <section class="gallery">
+          <div class="gallery-controller">
+            <h2 class="gallery-title">Это — не совсем то, что вы думаете</h2>
+            <div class="gallery-nav-buttons">
+              <div class="prev-btn">
+                <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_116_1417)">
+                    <rect class="bg-rect" width="20" height="48" rx="10" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" fill="#F6F6F6"/>
+                    <path class="line1" d="M14 0V0C14 5.52285 9.52285 10 4 10V10" stroke="#2E2D2B" stroke-width="2"/>
+                    <path class="line2" d="M14.125 20V20C14.125 14.4772 9.64785 10 4.125 10H4H58" stroke="#2E2D2B" stroke-width="2"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_116_1417">
+                      <rect width="20" height="48" rx="10" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="next-btn">
+                <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_116_1417)">
+                    <rect class="bg-rect" x="48" width="20" height="48" rx="10" transform="rotate(90 48 0)" fill="#F6F6F6"/>
+                    <path class="line1" d="M34 0V0C34 5.52285 38.4772 10 44 10V10" stroke="#2E2D2B" stroke-width="2"/>
+                    <path class="line2" d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10" stroke="#2E2D2B" stroke-width="2"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_116_1417">
+                      <rect x="48" width="20" height="48" rx="10" transform="rotate(90 48 0)" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-1"> 
+                <div class="slide-description" >
+                  <h4 class="slide-title">Немного упругости</h4>
+                  <p class="slide-txt">Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                </div>
+              </div>
+              <div class="swiper-slide slide-2"> 
+                <div class="slide-description">
+                  <h4 class="slide-title">Немного упругости</h4>
+                  <p class="slide-txt">Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                </div>
+              </div>
+              <div class="swiper-slide slide-3"> 
+                <div class="slide-description">
+                  <h4 class="slide-title">Немного упругости</h4>
+                  <p class="slide-txt">Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                </div>
+              </div>
+              <div class="swiper-slide slide-4"> 
+                <div class="slide-description">
+                  <h4 class="slide-title">Немного упругости</h4>
+                  <p class="slide-txt">Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="request">
+          <div class="request-info">
+            <h2 class="request-info-title">Если вы тоже решили «а почему бы и нет»</h2>
+            <ul class="request-info-list">
+              <li class="request-info-list-item">
+                <svg class="request-info-list-item-img">
+                  <use href="#request-li-marker"></use>
+                </svg>
+                Можно заказать много
+              </li>
+              <li class="request-info-list-item">
+                <svg class="request-info-list-item-img">
+                  <use href="#request-li-marker"></use>
+                </svg>
+                Доступ возможен через северный интерфейс
+              </li>
+              <li class="request-info-list-item">
+                <svg class="request-info-list-item-img">
+                  <use href="#request-li-marker"></use>
+                </svg>
+                Можно просто поболтать
+              </li>
+            </ul>
+          </div>
+          <form id="request-form" class="request-form">
+            <div class="request-form-inputs-row">
+              <input class="request-form-input" type="text" autocomplete="given-name" name="name" id="request-form-name-input" placeholder="Имя">
+              <input class="request-form-input" type="tel" autocomplete="tel" name="phone" id="request-form-phone-input" placeholder="Телефон">
+            </div>
+            <label id="request-form-checkbox-label" class="checkbox request-form-checkbox">
+              <input id="request-form-checkbox" type="checkbox" />
+              <span class="icon-wrapper">
+                <svg class="icon-default " viewBox="0 0 24 24">
+                  <use href="#checkbox-icon-default"></use>
+                </svg>
+                <svg class="icon-checked" viewBox="0 0 24 24">
+                  <use href="#checkbox-icon-checked.svg"></use>
+                </svg>
+              </span>
+              Согласен(-на) на обработку чего угодно — лишь бы форма работала
+            </label>
+            <button type="submit" class="request-form-btn">
+              <span class="request-form-btn-txt">Отправить</span>
+              <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_116_1660)">
+                  <rect class="bg-rect" x="48" width="20" height="48" rx="10" transform="rotate(90 48 0)" fill="#1F8B48"/>
+                    <path class="line1" d="M34 0V0C34 5.52285 38.4772 10 44 10V10" stroke="white" stroke-width="2"/>
+                    <path class="line2" d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10" stroke="white" stroke-width="2"/>
+                  </g>
+                <defs>
+                  <clipPath id="clip0_116_1660">
+                    <rect x="48" width="20" height="48" rx="10" transform="rotate(90 48 0)" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </form>
+        </section>
+        <section class="contacts">
+          <div class="contacts-info">
+            <h2 class="contacts-info-title">Контакты</h2>
+            <ul class="contacts-info-list"> 
+              <li class="contacts-info-list-item">
+                <svg class="contact-svg">
+                  <use href="#location"></use>
+                </svg>
+                <span>Офис, где делают странные, но симпатичные вещи</span>
+              </li>
+              <li class="contacts-info-list-item">
+                <svg class="contact-svg">
+                  <use href="#time"></use>
+                </svg>
+                <span>Пн-Пт с 10:00 до 20:00</span>
+              </li>
+              <li class="contacts-info-list-item">
+                <div class="contacts-info-list-phones-row">
+                  <div class="contacts-info-list-phone">
+                    <svg class="contact-svg">
+                      <use href="#phone"></use>
+                    </svg>
+                    <a class="contacts-info-list-link" href="tel:88008888888">8 (800) 444 44 44</a>
+                  </div>
+                  <div class="contacts-info-list-phone">
+                    <svg class="contact-svg">
+                      <use href="#phone"></use>
+                    </svg>
+                    <a class="contacts-info-list-link" href="tel:88008888888">8 (800) 888 88 88</a>
+                  </div>
+                </div>
+              </li>
+              <li class="contacts-info-list-item">
+                <svg class="contact-svg">
+                  <use href="#email"></use>
+                </svg>
+                <a class="contacts-info-list-link" href="mailto:example@mail.ru">example@mail.ru</a>
+              </li>
+            </ul>
+            <button class="contacts-btn">
+              <span class="contacts-btn-text">Связаться</span>
+              <svg class="contacts-btn-icon" width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_93_959)">
+                  <path class="line1" d="M34 0V0C34 5.52285 38.4772 10 44 10V10" stroke="#1F8B48" stroke-width="2"/>
+                  <path class="line2" d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10" stroke="#1F8B48" stroke-width="2"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_93_959">
+                    <rect x="48" width="20" height="48" rx="10" transform="rotate(90 48 0)" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div id="contacts-map" class="contacts-map"></div>
+        </section>
+      </main>
+      <footer class="footer">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="">О системе</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="">Архитектура</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="">Для своих</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="">Состав</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-policy">
+          <span class="footer-policy-txt">Коллаген © 2025</span>
+          <span class="footer-policy-txt">Политика обработки чего-то личного</span>
+        </div>
+        <a class="footer-logo" href="/" aria-label="На главную страницу">
+          <svg class="logo">
+            <use href="#logo"></use>
+          </svg>
+        </a>
+      </footer>
+    </div>
+    <div id="alert-popup" class="alert-popup">
+      <div id="alert-popup-cross" class="cross-circle">
+        <div class="cross-line"></div>
+      </div>
+      <div class="alert-popup-row">
+        <h3 class="alert-popup-title">Спасибо!</h3>
+        <span class="alert-popup-info">
+          Ваше сообщение отправлено.
+          <br> Мы свяжемся с вами в ближайшее время
+        </span>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

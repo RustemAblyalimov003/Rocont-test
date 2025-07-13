@@ -1,0 +1,9 @@
+@use "sass:math";
+
+@function line-height-px($font-size, $percent) {
+  @return $font-size * math.div($percent, 100);
+}
+
+@function letter-spacing-percent-to-px($font-size, $percent) {
+  @return $font-size * calc($percent / 100);
+}

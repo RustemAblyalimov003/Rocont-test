@@ -1,0 +1,24 @@
+@use 'functions' as fn;
+
+$line-height-h1: fn.line-height-px(64px, 90);
+$line-height-h2: fn.line-height-px(40px, 95);
+$line-height-h3: fn.line-height-px(32px, 100);
+$line-height-h4: fn.line-height-px(24px, 110);
+$line-height-large-text: fn.line-height-px(21px, 140);
+$line-height-medium-text: fn.line-height-px(16px, 150);
+$line-height-small-text: fn.line-height-px(12px, 100);
+$line-height-btn-txt: fn.line-height-px(18px, 110);
+
+$line-text-large-mobile: fn.line-height-px(18px, 120);
+
+$letter-spacing-medium: fn.letter-spacing-percent-to-px(21px, -3);
+$letter-spacing-small: fn.letter-spacing-percent-to-px(21px, -2);
+
+$default-color: #2E2D2B;
+$default-color-hover: #6B6A67;
+
+$media-1160px: 1160px;
+$media-960px: 960px;
+$media-640px: 640px;
+$media-480px: 480px;
+$media-320px: 320px;

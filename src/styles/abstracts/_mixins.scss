@@ -1,0 +1,77 @@
+@use 'variables' as vars;
+
+@mixin h1-heading($color: vars.$default-color) {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: vars.$line-height-h1;
+  font-family: "Gropled";
+  color: $color;
+}
+
+@mixin h2-heading($color: vars.$default-color) {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: vars.$line-height-h2;
+  font-family: "Gropled";
+  color: $color;
+}
+
+@mixin h3-heading($color: vars.$default-color) {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: vars.$line-height-h3;
+  font-family: "Gropled";
+  color: $color;
+}
+
+@mixin h4-heading($color: vars.$default-color) {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: vars.$line-height-h4;
+  font-family: "Gropled";
+  color: $color;
+}
+
+@mixin text-large($color: vars.$default-color) {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: vars.$line-height-large-text;
+  letter-spacing: vars.$letter-spacing-medium;
+  font-family: "Tilda Sans";
+  color: $color;
+}
+
+@mixin text-medium($color: vars.$default-color) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: vars.$line-height-medium-text;
+  letter-spacing: vars.$letter-spacing-small;
+  font-family: "Tilda Sans";
+  color: $color;
+}
+
+@mixin text-small($color: vars.$default-color) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: vars.$line-height-small-text;
+  letter-spacing: vars.$letter-spacing-small;
+  font-family: "Tilda Sans";
+  color: $color;
+}
+
+@mixin btn-txt($color: vars.$default-color) {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: vars.$line-height-btn-txt;
+  font-family: "Gropled";
+  color: $color;
+}
+
+@mixin text-large-mobile($color: vars.$default-color) {
+  font-weight: 500;
+  letter-spacing: vars.$letter-spacing-medium;
+  font-family: "Tilda Sans";
+  font-size: 18px;
+  line-height: vars.$line-text-large-mobile;
+  color: $color;
+}

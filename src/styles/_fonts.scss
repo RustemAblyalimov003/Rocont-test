@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Gropled";
+    src: local("Gropled"), url("@/assets/fonts/Gropled-Bold.woff") format("woff"),
+    url("@/assets/fonts/Gropled-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+    font-style: Bold;
+}
+@font-face {
+    font-family: "Tilda Sans";
+    src: local("Tilda Sans"), url("@/assets/fonts/tilda-sans_regular.woff") format("woff"),
+    url("@/assets/fonts/tilda-sans_regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: Regular;
+}
+@font-face {
+    font-family: "Tilda Sans";
+    src: local("Tilda Sans"), url("@/assets/fonts/tilda-sans_medium.woff") format("woff"),
+    url("@/assets/fonts/tilda-sans_medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+    font-style: medium;
+}

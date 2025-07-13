@@ -1,0 +1,15 @@
+@media (max-width: 550px) {
+    .alert-popup{
+        margin: auto 10px;
+        width: unset;
+        
+    }
+    .cross-circle{
+        left: calc(100% - 65px);
+    }
+}
+@media (max-width: 400px) {
+    .cross-circle{
+        top: -15px;
+    }
+}

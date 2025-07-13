@@ -1,0 +1,52 @@
+@use '@/styles/abstracts/variables' as var;
+@use '@/styles/abstracts/mixins' as *;
+
+@media (max-width: var.$media-960px) {
+    .gallery{
+        margin: 0 0 64px 0;
+    }
+    .gallery-controller{
+        width: 232px;
+    }
+    .swiper-slide{
+        height: 350px !important;
+        width: 250px !important;
+    }
+    .slide-title{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+@media (max-width: var.$media-640px) {
+    .gallery{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .gallery-controller{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .swiper-slide{
+        height: 320px !important;
+    }
+    .slide-description{
+        padding: 0 24px 24px 24px;
+    }
+}
+@media (max-width: var.$media-480px) {
+    .gallery {
+        gap: 35px;
+    }
+    .gallery-controller{
+        flex-direction: column;
+        gap: 35px;
+    }
+    .swiper-slide{
+        height: 280px !important;
+    }
+}

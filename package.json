@@ -1,0 +1,26 @@
+{
+  "name": "landing-vite",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "fast-glob": "^3.3.3",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.0",
+    "sass": "^1.63.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vite": "^5.0.0",
+    "vite-plugin-svg-spriter": "^1.0.0"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.9"
+  }
+}
