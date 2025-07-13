@@ -93,7 +93,8 @@
 .slide-txt{
     @include text-medium(white);
 }
-.next-btn:hover{
+.next-btn:hover,
+.next-btn:active{
     .bg-rect {
         fill: #1F8B48;   
     }
@@ -104,7 +105,8 @@
         stroke: white;
     }
 }
-.prev-btn:hover{
+.prev-btn:hover,
+.prev-btn:active{
     .bg-rect {
         fill: #1F8B48;   
     }

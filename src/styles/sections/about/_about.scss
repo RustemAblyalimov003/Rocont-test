@@ -65,7 +65,8 @@
 }
 .about-info-btn:focus,
 .about-info-btn:active {
-  outline: 1px solid #43A25E;
+    box-shadow: 0 0 0 3px rgba(83, 201, 116, 0.5);
+    outline: none
 }
 .about-info-btn-txt{
     @include btn-txt(white);
